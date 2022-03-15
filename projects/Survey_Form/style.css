@@ -1,0 +1,71 @@
+body {
+  border-color: blue;
+  border-size: 50%;
+  border-width:auto;
+	background-color: lightblue;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+#title {
+  border-color:#151515;
+  border-style: solid;
+  border-radius: 35px;
+  background-color: white;
+  text-align: center;
+}
+#description {
+  text-align: center;
+}
+.form-format {
+	display: block;
+	width: 250px;
+	height: auto;
+	margin: 0px;
+	padding: 0px:
+}
+label, select {
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 25px;
+}
+input {
+	border-color: silver;
+	border-style: solid;
+	border-radius: 5px;
+}
+select {
+	width: 180px;
+	height: auto;
+	margin: 0px;
+	padding: 0px:
+}
+.custom-style {
+	width: 250px; 
+	height: auto; 
+	padding: 5px 2px; 
+	margin: 5px 2px;
+	font-weight: bold;
+	font-family: monospace;
+	font-size: 17px;
+}
+textarea {
+	resize: none;
+	width: 350px;
+	height: 100px;
+	margin: 7px 0px 0px 12.5px;
+	padding: 10px:
+}
+footer {
+  clear: both;
+  border-color: black;
+  border-style: solid;
+  border-radius: 30px;
+  padding: -1px;
+  margin: 0px;
+  background: white;
+  text-align: center;
+}
+#submit {
+  margin: -3px 0px 3px 160px;
+}

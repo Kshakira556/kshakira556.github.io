@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+  font-family: 'Nunito', sans-serif;
+}  
+main {
+  background-color: black;
+  color: white;
+}
+#title {
+  text-align: center;
+  color: white;
+  background-color: #151515;
+}
+figure #image-caption {
+  text-align: center;
+  font-size: 75%;
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  border: solid;
+  border-color: #151515;
+  border-radius: 50%;
+}
+#tribute-link {
+  display: block;
+  text-align: right;
+  color: grey;
+  text-decoration: none;
+  font-size: 15px;
+}
+footer {
+  background-color: #151515;
+  text-align: center;
+}
