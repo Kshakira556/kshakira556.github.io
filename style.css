@@ -2,6 +2,7 @@ body {
 	font-family: Helvetica, Arial;
 	box-sizing: border-box;
 	background-image: linear-gradient(120deg, teal, black, teal, black, teal, black);
+	background-color: black;
 	line-height: 65px;
 	width: auto;
 	height: auto;
@@ -148,6 +149,7 @@ span {
 
 #projectImagesStyle {
 	display: block;
+	margin-left: 69px;
 }
 
 .left-float {
@@ -163,11 +165,11 @@ footer {
 }
 
 .mid-img {
-	width: 250px;
+	width: 280px;
 	height: 300px;
 	border-radius: 6px;
 	border: solid 1px black;
-	margin: 5px 8.1px -8px 5px;
+	margin: 5px 8.1px -8px 10px;
 }
 
 footer {
@@ -178,4 +180,61 @@ footer p {
 	margin-top: 4px;
 }
 
+@media screen and (max-width: 700px) {
+	.top-img {
+		width: 99%;
+		height: 150px;
+	}
+	icon {
+		float: left;
+		width: 98%;
+		height: auto;
+	}
+	#icons {
+		width: 2%;
+		height: 2%;
+	}
+	#icons img {
+		width: 50px;
+		height: auto;
+	}
+	#skills {
+		margin-top: auto;
+		text-align: center;
+		margin-left: -3px;
+	}
+	.container p {
+		margin-left: 10px;
+		text-align: left;
+		font-size: 14px;
+	}
+	#projects {
+		margin-top: 335px;
+	}
+	#projectImagesStyle {
+		display: flex;
+		flex: flex-wrap;
+	}
+	.mid-img {
+		width: 300px;
+		margin-left: 12px;
+		margin-bottom:  5px;
+	}
+	footer {
+		margin-top: 3px;
+	}
+}
 
+@media screen and (max-width: 400px) {
+	#projects {
+		margin-top: 480px;
+		width: 98%;
+	}
+	.mid-img {
+		width: 98%;
+		margin-left: 4px;
+	}
+	footer p {
+		font-size: 10px;
+	}
+}

@@ -15,7 +15,6 @@ let iconList = {
 }
 let projImageList = {
 	"Leads Tracker": "projects/screenshots/lTracker.png",
-	"Tribute Page": "images/logoWhite.png",//"projects/screenshots/tPage.png",
 	"Blackjack Game": "projects/screenshots/bjGame.png",
 	"Tech Document Website": "images/logoWhite.png",//"projects/screenshots/tdWebsite.png",
 	"Coming soon project": "images/logoWhite.png" //"projects/screenshots/csProject.png"
