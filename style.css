@@ -1,7 +1,7 @@
 body {
 	font-family: Helvetica, Arial;
 	box-sizing: border-box;
-	background-image: linear-gradient(120deg, teal, black, teal, black, teal, black);
+	/* background-image: linear-gradient(120deg, teal, black, teal, black, teal, black); */
 	background-color: black;
 	line-height: 65px;
 	width: auto;
@@ -161,6 +161,7 @@ span {
 }
 
 footer {
+	margin-top: 340px;
 	height: 65px;
 }
 
@@ -172,12 +173,14 @@ footer {
 	margin: 5px 8.1px -8px 10px;
 }
 
-footer {
-	margin-top: 340px;
+#contact {
+	background-image: inherit;
 }
 
-footer p {
-	margin-top: 4px;
+#contact a img{
+	width: 30px;
+	margin-top: 5px;
+	padding; 5px;
 }
 
 @media screen and (max-width: 700px) {
@@ -209,15 +212,15 @@ footer p {
 		font-size: 14px;
 	}
 	#projects {
-		margin-top: 335px;
+		margin-top: 400px;
 	}
 	#projectImagesStyle {
 		display: flex;
 		flex: flex-wrap;
 	}
 	.mid-img {
-		width: 300px;
-		margin-left: 12px;
+		width: 88%;
+		margin-left: auto;
 		margin-bottom:  5px;
 	}
 	footer {
@@ -231,8 +234,8 @@ footer p {
 		width: 98%;
 	}
 	.mid-img {
-		width: 98%;
-		margin-left: 4px;
+		width: 100%;
+		margin-left: -38px;
 	}
 	footer p {
 		font-size: 10px;
