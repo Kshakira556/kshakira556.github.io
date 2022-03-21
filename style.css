@@ -1,7 +1,6 @@
 body {
 	font-family: Helvetica, Arial;
 	box-sizing: border-box;
-	/* background-image: linear-gradient(120deg, teal, black, teal, black, teal, black); */
 	background-color: black;
 	line-height: 65px;
 	width: auto;
