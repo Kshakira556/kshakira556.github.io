@@ -1,7 +1,6 @@
 let iconList = {
 	"AdobeXD": "icons/adobeXd.png",
 	"Bootstrap": "icons/bootstrap.png",
-	"Codepen": "icons/codepen.png",
 	"CSS3": "icons/css3.png",
 	"GIT": "icons/git.png",
 	"Github": "icons/github.png",
@@ -16,16 +15,9 @@ let iconList = {
 let projImageList = {
 	"Leads Tracker": "projects/screenshots/lTracker.png",
 	"Blackjack Game": "projects/screenshots/bjGame.png",
-	"Tech Document Website": "images/logoWhite.png",//"projects/screenshots/tdWebsite.png",
-	"Coming soon project": "images/logoWhite.png" //"projects/screenshots/csProject.png"
+	"Tutor Website": "projects/screenshots/fuzzyness_tutoring.png",
+	"Scrum Agile To do list": "projects/screenshots/scrum.png" 
 }
-// let contactIcons = {
-	// "email": "icons/email.png",
-	// "insta": "icons/ig.png",
-	// "LinkedIn": "icons/linkedin.png",
-	// "twitter": "icons/twitter.png",
-	// "youtube": "icons/youtube.png",
-// }
 
 let projectImagesEl = document.getElementById("projectImages")
 let iconsEl = document.getElementById("icons")
@@ -36,7 +28,6 @@ function displayIcons() {
 	iconsEl.innerHTML += 
 `
 	<img src = ${iconList[k]} alt = "${k} logo"></img>
-	 <span>${k}</span>
 `
 	} 
 }
@@ -57,16 +48,8 @@ function displayProjectScreenshots() {
 		}
 	}
 }
-// function displayContactIcons() {
-	// for (let k in contactIcons) {
-		// iconsEl.innerHTML += 
-	// `
-		// <img src = ${contactIcons[k]} alt = "${k} logo"></img>
-	// `
-	// } 
-// }
+
 
 displayIcons()
 displayProjectScreenshots()
-// displayContactIcons()
 

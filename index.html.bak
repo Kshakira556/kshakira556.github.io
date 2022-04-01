@@ -51,7 +51,7 @@
 		<img id = "coming_soon" src = "images/coming_soon.png">
 	</div>
 	<footer>
-		<h2>Send me an email</h2>
+		<h2>Send me an email or buy me a coffee</h2>
 		<div id = "email_bar">
 			<button>SUBMIT</button>
 			<input placeholder = "Drop an email">

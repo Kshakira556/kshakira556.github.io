@@ -284,7 +284,7 @@ footer > h2 {
 		font-size: 14px;
 	}
 	#projects {
-		margin-top: 390px;
+		margin-top: 410px;
 	}
 	#projectImagesStyle {
 		display: flex;
