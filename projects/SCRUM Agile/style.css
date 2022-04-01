@@ -1,0 +1,68 @@
+ body {
+	 background-color: black;
+	 padding: 2px;
+	 height: 1200px;
+ }
+  
+ section {
+ 	 display: flex;
+ }
+ 
+ .headLine {
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+	letter-spacing: 4px;
+	font-size: 20px;
+	color: white;
+ }
+ 
+ .vLinePos {
+	 width: 99%;
+	 height: 1200px;
+	 border-left: 3px solid white;
+	 border-top: 3px solid white;
+	 border-right: 6px solid white;
+ }
+ .vl_0 {
+	 border-left: 6px solid white;
+ }
+ 
+ #inputContainer  {
+	 display: flex;
+	 margin: -150% 40.5% 50% 40.5%;
+	 height: 10%;
+	 width: 17%;
+ }
+ 
+ textarea {
+	 font-weight: bold;
+	 border-left: 1px solid red;
+	 border-right: 1px solid red;
+	 border-bottom: 1px solid red;
+	 border-top: 15px solid red;
+	 border-radius: 5px;
+	 background-color: yellow;	 
+	 padding: 1.5px;
+	 cursor: move;
+ }
+ 
+ #symbolBtn {
+	display: flex; 
+ }
+ 
+ #symbol {
+	 color: black;
+	 border-radius: 50%;
+	 width: 60px;
+	 height: 60px;
+	 font-weight: bold;
+	 font-size: 20px;
+	 float: right;
+	 position: scroll;
+	 margin: -105% 0 0 90%;
+ }
+ 
+ /* make textarea draggable */
+ /* make the button sticky */
+ 

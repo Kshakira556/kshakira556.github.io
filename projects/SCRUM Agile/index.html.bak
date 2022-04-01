@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" href = "style.css">
+	</head>
+	<body>
+	<section>
+		<div class = "vl_0 vLinePos"><span class = "headLine">STORY</span></div>
+		<div class = "vl_1 vLinePos"><span class = "headLine">TO-DO</span></div>
+		<div class = "vl_2 vLinePos"><span class = "headLine">DOING</span></div>
+		<div class = "vl_3 vLinePos"><span class = "headLine">REVIEW</span></div>
+		<div class = "vl_4 vLinePos"><span class = "headLine">BACKLOG</span></div>
+		<div class = "vl_5 vLinePos"><span class = "headLine">DONE</span></div>
+	</section>
+	<div id = "symbolBtn">
+	<button id = "symbol" onclick = "myFunction()">+</button>
+	</div>
+	<div id = "inputContainer">
+		<input  type = "text" draggable = "true" cols = "40" rows = "5"></input>
+	</div>
+		<script src = "java.js"></script>
+	</body>
+</html>
