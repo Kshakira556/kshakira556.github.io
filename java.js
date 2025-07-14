@@ -3,7 +3,7 @@ const iconList = {
   "React": "https://github.com/Kshakira556/kshakira556.github.io/blob/24a2411b252071b7165d12259081542d93d86b2d/icons/react.js.png",
   "CSS3": "icons/css3.png",
   "JavaScript": "icons/javascript.png",
-  "Kotlin": "icons/nodejs.png",
+  "Kotlin": "icons/kotlin.png",
   "Git": "icons/git.png",
   "Github": "icons/github.png",
   "React Native": "icons/React_Native.png"
