@@ -1,77 +1,78 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Shakira Knight Web Developer</title>
-		<link rel = "stylesheet" href = "style.css">
-		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		<meta charset="UTF-8">
-		<meta name="description" content="Shakira Knight Front-end Portfolio/Resume/CV">
-		<meta name="keywords" content="HTML, CSS, JavaScript, Web developer, Shakira Knight, Web design">
-		<meta name="Shakira Knight" content="Web Developer Portfolio">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<body>
-		<nav>
-		<div id="mySidenav" class="sidenav">
-		  <a href="#proj" id="projectsInNav">Projects</a>
-		  <a href="#" id="contact">Contact</a>
-		</div>
-	</nav>
-	<h1>Shakira Knight</h1>
-	<section id = "hero">
-		<img class = "top-img" src = "icons/buttercup2.png" alt = "logo placeholder for a professional headshot.">
-		<icon class = "container">
-			<h2 id = "skills">Skills</h2>
-			<ul>
-				<li>Adobe</li>
-				<li>Bootstrap</li>
-				<li>CSS</li>
-				<li>Git</li>
-				<li>Github</li>
-				<li>HTML5</li>
-				<li>JavaScript</li>
-				<li>jQuery</li>
-				<li>Node.js</li>
-				<li>React</li>
-				<li>Redux</li>
-				<li>Sass</li>
-			</ul>
-			<i id = "icons"></i>
-			<p>I am a self taught front-end developer and aspiring full-stack developer.</p>
-			<p>I love coffee, raggaeton, and weightlifting</p>
-		</icon>
-	</section>
-	<h2 id = "projects">Projects</h2>
-	<div id = "projectImagesStyle">
-		<div id = "projectImages"></div>
-	</div>	
-		<script src = "java.js"></script>
-	</body>
-	<div id = "sticker">
-		<img id = "coming_soon" src = "images/coming_soon.png">
-	</div>
-	<footer>
-		<h2>Send me an email</h2>
-		<div id = "email_bar">
-			<button>SUBMIT</button>
-			<input placeholder = "Drop an email">
-		</div>
-		<div id = "contact">
-			<a target = "_blank" href = "tel:+27672042327">
-				<img src = "images/call_logo.png" placeholder = "Call icon">
-			</a>
-			<a target = "_blank" href = "mailto:kshakira556gmail.com?body=Dear Fazlin">
-				<img src = "images/email.png" placeholder = "Email icon">
-			</a>
-			<a target = "_blank" href = "https://api.whatsapp.com/send?phone=27672042327">
-				<img src = "images/whatsapp_logo.png" placeholder = "Whatsapp icon">
-			</a>
-			<a target = "_blank" href = "https://linkedin.com/in/shakira-knight-638582209 ">
-				<img src = "images/linkedIn.png" placeholder = "LinkedIn">
-			</a>
-			<a target = "_blank" href = "https://kshakira556.github.io">
-				<img src = "icons/github.png" placeholder = "github">
-			</a>
-		</div>
-	</footer>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shakira Knight | Web & Mobile Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shakira Knight | Front-End Web & Mobile Developer Portfolio">
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS Animate on Scroll CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script defer src="java.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Shakira Knight</h1>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="hero" class="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <img src="images/profile_placeholder.jpg" alt="Shakira Knight professional headshot" class="hero-img" />
+      <div>
+        <h1>Hey, I'm <span>Shakira Knight</span></h1>
+        <p class="tagline">Web & Mobile Developer crafting bold, modern digital experiences.</p>
+        <a href="#contact" class="btn-primary">Let's Build Together</a>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>Hi, I’m Shakira Knight — a mobile and web developer with a passion for building technology that keeps people safe, connected, and empowered.</p>
+    <p>Before diving into tech, I spent years in business operations and enterprise sales — leading national teams, managing major accounts, and driving growth for brands like Vodacom, MTN, and iKhokha. That experience taught me how to spot opportunities, communicate across silos, and solve problems that matter.</p>
+    <p>I’m also proudly mixed race, queer, and neurodivergent — a late-diagnosed autistic adult (AFAB) and twice exceptional. My lived experience shapes how I see the world and fuels my mission to build apps that protect people, support emotional wellness, and make the digital space safer for everyone — especially those who don’t always feel seen.</p>
+    <p>Right now, I’m working on AURA, an AI-powered safety assistant that uses GPT-powered emotional analysis and real-time alerts to help people spot manipulation, scams, and other threats.</p>
+    <p>When I’m not coding, you’ll find me weightlifting, playing chess, or reading up on psychology and human behavior — all part of my mission to blend tech, empathy, and security in every project I create.</p>
+  </section>
+  <section id="skills" class="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div id="icons" class="icons"></div>
+  </section>
+  <section id="projects" class="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div id="projectImages" class="project-gallery"></div>
+    <p class="coming-soon">More projects coming soon!</p>
+  </section>
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <p>Let’s collaborate on your next project.</p>
+    <form action="mailto:kshakira556@gmail.com" method="post" enctype="text/plain">
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="socials">
+      <a href="tel:+27672042327">Call</a>
+      <a href="mailto:kshakira556@gmail.com">Email</a>
+      <a href="https://api.whatsapp.com/send?phone=27672042327" target="_blank">WhatsApp</a>
+      <a href="https://linkedin.com/in/shakira-knight-638582209" target="_blank">LinkedIn</a>
+      <a href="https://github.com/kshakira556" target="_blank">GitHub</a>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Shakira Knight. All rights reserved.</p>
+  </footer>
+  <!-- AOS Animate on Scroll JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
+  </script>
+</body>
 </html>
