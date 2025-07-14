@@ -1,9 +1,9 @@
 const iconList = {
   "HTML5": "icons/html5.png",
-  "React": "https://raw.githubusercontent.com/Kshakira556/kshakira556.github.io/main/icons/react.png",
+  "React": "icons/react.js.png",
   "CSS3": "icons/css3.png",
   "JavaScript": "icons/javascript.png",
-  "Kotlin": "https://raw.githubusercontent.com/Kshakira556/kshakira556.github.io/main/icons/kotlin.png",
+  "Kotlin": "icons/kotlin.png",
   "Git": "icons/git.png",
   "Github": "icons/github.png",
   "React Native": "icons/React_Native.png"
