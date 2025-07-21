@@ -175,5 +175,5 @@ footer {
   color: #aaa;
 }
 #about + p {
-  display: inline;
+  display: block;
 }
