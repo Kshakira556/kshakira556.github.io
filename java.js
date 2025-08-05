@@ -1,5 +1,5 @@
 const iconList = {
-  "HTML5": "https://kshakira556.github.io/assets/html5.png",
+  "HTML5": "/assets/html5.png",
   "React": "assets/react.js.png",
   "CSS3": "assets/css3.png",
   "JavaScript": "assets/javascript.png",
@@ -134,5 +134,6 @@ document.addEventListener("touchend", e => {
     });
   }
 });
+
 
 
