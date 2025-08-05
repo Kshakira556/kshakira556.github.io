@@ -1,12 +1,12 @@
 const iconList = {
   "HTML5": "/assets/html5.png",
-  "React": "assets/react.js.png",
-  "CSS3": "assets/css3.png",
-  "JavaScript": "assets/javascript.png",
-  "Kotlin": "assets/kotlin.png",
-  "Git": "assets/git.png",
-  "Github": "assets/github.png",
-  "React Native": "assets/react-native.png"
+  "React": "/assets/react.js.png",
+  "CSS3": "/assets/css3.png",
+  "JavaScript": "/assets/javascript.png",
+  "Kotlin": "/assets/kotlin.png",
+  "Git": "/assets/git.png",
+  "Github": "/assets/github.png",
+  "React Native": "/assets/react-native.png"
 };
 
 const projImageList = {
@@ -134,6 +134,7 @@ document.addEventListener("touchend", e => {
     });
   }
 });
+
 
 
 
