@@ -34,7 +34,7 @@
 
   <section id="hero" class="hero">
     <div class="hero-content" data-aos="fade-up">
-      <img src="images/profile_placeholder.jpg" alt="Shakira Knight professional headshot" class="hero-img" />
+      <img src="assets/pro-headshot.jpeg" alt="Shakira Knight professional headshot" class="hero-img" />
       <div>
         <h1>Hey, I'm <span>Shakira Knight</span></h1>
         <p class="tagline">Web & Mobile Developer crafting bold, modern digital experiences.</p>
@@ -62,11 +62,17 @@
   <section id="contact" class="contact" data-aos="fade-up">
     <h2>Contact Me</h2>
     <p>Let’s collaborate on your next project.</p>
-    <form action="mailto:kshakira556@gmail.com" method="post" enctype="text/plain">
+    <form action="https://formsubmit.co/kshakira556@gmail.com" method="POST">
       <input type="email" name="email" placeholder="Your email" required>
       <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+      
+      <!-- Optional settings -->
+      <input type="hidden" name="_next" value="https://kshakira556.github.io/thank-you.html">
+      <input type="hidden" name="_captcha" value="false">
+      
       <button type="submit">Send Message</button>
     </form>
+
     <div class="socials">
       <a href="tel:+27672042327">Call</a>
       <a href="mailto:kshakira556@gmail.com">Email</a>
@@ -88,3 +94,4 @@
   </script>
 </body>
 </html>
+
