@@ -1,5 +1,5 @@
 const iconList = {
-  "HTML5": "assets/html5.png",
+  "HTML5": "https://github.com/Kshakira556/kshakira556.github.io/blob/3f00b2f6273b9f72293f07bdd5afaffa0c637dc0/assets/html5.png",
   "React": "assets/react.js.png",
   "CSS3": "assets/css3.png",
   "JavaScript": "assets/javascript.png",
@@ -134,3 +134,4 @@ document.addEventListener("touchend", e => {
     });
   }
 });
+
