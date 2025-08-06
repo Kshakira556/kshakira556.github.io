@@ -1,6 +1,6 @@
 const iconList = {
   "HTML5": "assets/html5.png",
-  "React": "assets/react.js.png",
+  "React": "assets/react.png",
   "CSS3": "assets/css3.png",
   "JavaScript": "assets/javascript.png",
   "Kotlin": "assets/kotlin.png",
@@ -35,12 +35,15 @@ const projImageList = {
     "assets/coming_soon.png",
     "assets/coming_soon.png"
   ]
-  // Add more projects as needed
 };
-
 
 function displayIcons() {
   const iconsEl = document.getElementById("icons");
+  if (!iconsEl) {
+    console.error('Element with id "icons" not found.');
+    return;
+  }
+
   for (let tech in iconList) {
     iconsEl.innerHTML += `<img src="${iconList[tech]}" alt="${tech} logo" />`;
   }
@@ -48,6 +51,10 @@ function displayIcons() {
 
 function displayProjects() {
   const projectsEl = document.getElementById("projectImages");
+  if (!projectsEl) {
+    console.error('Element with id "projectImages" not found.');
+    return;
+  }
 
   for (let project in projImageList) {
     const images = projImageList[project]
@@ -80,7 +87,7 @@ function displayProjects() {
     let index = 0;
 
     function updateCarousel() {
-      const imgWidth = images[0].clientWidth;
+      const imgWidth = images[0]?.clientWidth || 0;
       track.style.transform = `translateX(-${index * imgWidth}px)`;
     }
 
@@ -98,44 +105,14 @@ function displayProjects() {
       }
     });
 
-    // Resize fix
     window.addEventListener("resize", updateCarousel);
+    updateCarousel();
   });
+
+  console.log('Project cards added:', projectsEl.innerHTML);
 }
 
-displayIcons();
-displayProjects();
-
-function changeSlide(id, direction) {
-  const container = document.getElementById(id);
-  const images = container.querySelectorAll('.carousel-image');
-  let currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
-
-  images[currentIndex].classList.remove('active');
-  currentIndex = (currentIndex + direction + images.length) % images.length;
-  images[currentIndex].classList.add('active');
-}
-
-// Swipe support (mobile)
-let startX = 0;
-document.addEventListener("touchstart", e => {
-  startX = e.touches[0].clientX;
+document.addEventListener("DOMContentLoaded", () => {
+  displayIcons();
+  displayProjects();
 });
-
-document.addEventListener("touchend", e => {
-  const endX = e.changedTouches[0].clientX;
-  const diff = startX - endX;
-
-  if (Math.abs(diff) > 50) {
-    const carousels = document.querySelectorAll(".carousel");
-    carousels.forEach(carousel => {
-      const id = carousel.id;
-      changeSlide(id, diff > 0 ? 1 : -1);
-    });
-  }
-});
-
-
-
-
-
