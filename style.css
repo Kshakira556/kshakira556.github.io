@@ -625,3 +625,71 @@ section#contact {
 *::after {
   box-sizing: border-box;
 }
+
+/* Default: table shown */
+table {
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto 3rem;
+  border-collapse: collapse;
+  background: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(106, 13, 173, 0.4);
+}
+
+/* Hide the table header row on mobile */
+@media (max-width: 768px) {
+  table {
+    border: none;
+    box-shadow: none;
+    max-width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    display: block;
+    background: #1e1e1e;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(106, 13, 173, 0.4);
+  }
+
+  tbody tr:hover {
+    background: #32165a;
+  }
+
+  tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border: none;
+    border-bottom: 1px solid #333;
+    font-weight: 500;
+  }
+
+  tbody td:last-child {
+    border-bottom: none;
+  }
+
+  /* Add label before each td using data-label attribute for accessibility */
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #00f5d4;
+    flex-basis: 40%;
+  }
+
+  tbody td {
+    flex-basis: 60%;
+  }
+
+  /* Make table rows stack vertically nicely */
+  tbody td {
+    flex-wrap: wrap;
+  }
+}
