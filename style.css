@@ -516,13 +516,26 @@ section ul {
   .process-list {
     font-size: 1rem;
   }
-  #contact .btn-primary {
+  /* Buttons full width on smaller screens */
+  .btn-primary {
     width: 100%;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
   }
-}
 
-/* Smaller devices (up to 768px) improvements */
-@media (max-width: 768px) {
+  /* Contact specific button full width override */
+  /* This ensures the Get in Touch button inside #contact is full width on mobile */
+  #contact .btn-primary {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+
   /* Navbar: stack vertically and center on mobile */
   .navbar {
     flex-direction: column;
@@ -580,12 +593,6 @@ section ul {
     max-width: 100%;
     padding: 0 1rem;
   }
-
-  /* Buttons full width on smaller */
-  .btn-primary {
-    width: 100%;
-    padding: 1rem 0;
-  }
 }
 
 /* Extra small devices (up to 400px) */
@@ -605,4 +612,16 @@ section ul {
   section h2 {
     font-size: 1.4rem;
   }
+}
+
+section#contact {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
