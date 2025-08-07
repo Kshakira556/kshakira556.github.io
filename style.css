@@ -640,17 +640,17 @@ table {
 
 /* Hide the table header row on mobile */
 @media (max-width: 768px) {
-  table {
+  table:not(.static-layout) {
     border: none;
     box-shadow: none;
     max-width: 100%;
   }
 
-  thead {
+  table:not(.static-layout) thead {
     display: none;
   }
 
-  tbody tr {
+  table:not(.static-layout) tbody tr {
     display: block;
     background: #1e1e1e;
     margin-bottom: 1.5rem;
@@ -659,11 +659,11 @@ table {
     box-shadow: 0 0 15px rgba(106, 13, 173, 0.4);
   }
 
-  tbody tr:hover {
+  table:not(.static-layout) tbody tr:hover {
     background: #32165a;
   }
 
-  tbody td {
+  table:not(.static-layout) tbody td {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0;
@@ -672,12 +672,12 @@ table {
     font-weight: 500;
   }
 
-  tbody td:last-child {
+  table:not(.static-layout) tbody td:last-child {
     border-bottom: none;
   }
 
   /* Add label before each td using data-label attribute for accessibility */
-  tbody td::before {
+  table:not(.static-layout) tbody td::before {
     content: attr(data-label);
     font-weight: 600;
     color: #00f5d4;
@@ -738,7 +738,6 @@ table {
   width: 40vw;
   height: 100vh;
   background-color: var(--primary-bg, #111);
-  /*opacity: 95%;*/
   color: var(--text-light, #fff);
   display: flex;
   flex-direction: column;
@@ -821,3 +820,4 @@ table {
     display: none;
   }
 }
+
