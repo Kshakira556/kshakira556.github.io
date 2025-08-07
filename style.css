@@ -352,3 +352,171 @@ textarea:focus {
   margin-top: 1rem;
   color: #00f5d4;
 }
+
+/* === Services Page Specific Styles (Added) === */
+
+/* Section headings */
+section h2 {
+  color: #00f5d4;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+/* Hero Section overrides if needed */
+.hero p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+section p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  max-width: 900px;
+  margin: 2rem auto 3rem;
+  border-collapse: collapse;
+  background: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(106, 13, 173, 0.4);
+}
+
+thead {
+  background: #6a0dad;
+  color: #fff;
+}
+
+th, td {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid #333;
+  font-weight: 500;
+}
+
+tbody tr:hover {
+  background: #32165a;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Comparison Table special styles */
+.comparison-table {
+  max-width: 700px;
+}
+
+.comparison-table td, .comparison-table th {
+  text-align: center;
+}
+
+.crossmark {
+  color: #e63946; /* red */
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.checkmark {
+  color: #00f5d4;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* Add-on list */
+section ul {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #ccc;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* Process list */
+.process-list {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  padding-left: 1.3rem;
+  text-align: left;
+  color: #ccc;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.process-list li {
+  margin-bottom: 1rem;
+}
+
+/* Testimonials */
+.testimonial {
+  max-width: 700px;
+  margin: 2rem auto 4rem;
+  background: #1e1e1e;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  font-style: italic;
+  color: #ccc;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  outline-offset: 4px;
+}
+
+.testimonial:focus {
+  outline: 3px solid #00f5d4;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 1rem;
+  font-style: normal;
+  color: #00f5d4;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Contact Section */
+#contact {
+  background: #1e1e1e;
+  padding: 3rem 2rem 5rem;
+}
+
+#contact h2 {
+  margin-bottom: 1rem;
+}
+
+#contact p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+#contact .btn-primary {
+  font-size: 1.15rem;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  table, .comparison-table {
+    font-size: 0.9rem;
+  }
+  section h2 {
+    font-size: 1.6rem;
+  }
+  .process-list {
+    font-size: 1rem;
+  }
+  #contact .btn-primary {
+    width: 100%;
+  }
+}
