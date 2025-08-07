@@ -520,3 +520,89 @@ section ul {
     width: 100%;
   }
 }
+
+/* Smaller devices (up to 768px) improvements */
+@media (max-width: 768px) {
+  /* Navbar: stack vertically and center on mobile */
+  .navbar {
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 1rem;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* Hero Section: stack image and text vertically */
+  .hero {
+    flex-direction: column;
+    padding: 4rem 1.5rem;
+  }
+  .hero-img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 1.5rem;
+    border-width: 3px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* Section padding reduced */
+  section {
+    padding: 2.5rem 1rem;
+  }
+
+  /* Skills grid: switch from grid to flex column */
+  .skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Project gallery grid: fewer columns */
+  .project-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  /* Testimonials grid: single column on mobile */
+  .testimonials-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact form: full width inputs */
+  .contact form {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  /* Buttons full width on smaller */
+  .btn-primary {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
+
+/* Extra small devices (up to 400px) */
+@media (max-width: 400px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+  .skills-category h3 {
+    font-size: 1.2rem;
+  }
+  section h2 {
+    font-size: 1.4rem;
+  }
+}
