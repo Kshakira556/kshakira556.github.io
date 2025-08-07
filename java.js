@@ -143,3 +143,26 @@ document.addEventListener("DOMContentLoaded", () => {
   displayIcons();
   displayProjects();
 });
+
+
+const toggleBtn = document.querySelector(".menu-toggle");
+const closeBtn = document.querySelector(".close-btn");
+const mobileNav = document.querySelector(".mobile-nav");
+const mobileLinks = document.querySelectorAll(".mobile-nav a");
+
+// Toggle mobile menu open/close when hamburger clicked
+toggleBtn.addEventListener("click", () => {
+  mobileNav.classList.toggle("show");
+});
+
+// Close mobile menu when close button clicked
+closeBtn.addEventListener("click", () => {
+  mobileNav.classList.remove("show");
+});
+
+// Close mobile menu when any menu link is clicked
+mobileLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    mobileNav.classList.remove("show");
+  });
+});
