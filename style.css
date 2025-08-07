@@ -693,3 +693,131 @@ table {
     flex-wrap: wrap;
   }
 }
+
+/* === Mobile Navbar Styles === */
+
+/* Header container */
+.mobile-header {
+  position: fixed;
+  top: 0;
+  right: 0;              /* align the burger to the top-right */
+  padding: 0.5rem;       /* minimal padding */
+  background: transparent; /* no background */
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;           /* shrink to content */
+  height: auto;          /* shrink to content */
+  box-shadow: none;      /* remove shadow */
+}
+
+/* Remove or hidelogo styles*/
+.mobile-header .logo {
+  display: none;
+}
+
+
+/* Hamburger icon */
+.menu-toggle {
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  color: #00f5d4;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+/* Nav Overlay */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40vw;
+  height: 100vh;
+  background-color: var(--primary-bg, #111);
+  /*opacity: 95%;*/
+  color: var(--text-light, #fff);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 2rem;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 999;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.mobile-nav::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+/* Show menu */
+.mobile-nav.show {
+  transform: translateX(0);
+}
+
+/* Close button */
+.close-btn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 2rem;
+}
+
+/* Nav links */
+.mobile-nav ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.mobile-nav li {
+  margin: 1rem 0;
+}
+
+.mobile-nav a {
+  font-size: 1.6rem;
+  font-family: var(--body-font, 'Poppins'), sans-serif;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.mobile-nav a.highlight {
+  font-weight: bold;
+  color: var(--accent-color, #00ffe1);
+}
+
+.mobile-nav a:hover {
+  color: var(--accent-color, #00ffe1);
+}
+
+/* Hide on larger screens */
+@media (min-width: 768px) {
+  .mobile-header,
+  .mobile-nav {
+    display: none;
+  }
+}
+
+/* Hide Desktop nav on small screens */
+@media (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+}
