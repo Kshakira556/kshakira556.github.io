@@ -86,16 +86,45 @@
         </table>
       </section>
 
-      <section aria-labelledby="addons-title">
+      <section aria-labelledby="addons-title" class="addons-accordion">
         <h2 id="addons-title">Add-ons (Subcontract if Needed)</h2>
-        <ul>
-          <li>Branding (logo, palette): R1,000 – R3,000</li>
-          <li>Copywriting (bios, content): R500 – R2,000</li>
-          <li>Social media graphics: R500 – R1,500</li>
-          <li>Email newsletter setup: R800 – R2,000</li>
-          <li>SEO optimization: R1,000 – R3,000</li>
-        </ul>
+
+        <div class="accordion-item">
+          <button class="accordion-header">Branding (logo, palette)</button>
+          <div class="accordion-content">
+            <p>Visual identity design including logo, colours, and typography.<br><strong>R1,000 – R3,000</strong></p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">Copywriting (bios, content)</button>
+          <div class="accordion-content">
+            <p>Professional writing for website bios, landing pages, and content.<br><strong>R500 – R2,000</strong></p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">Social Media Graphics</button>
+          <div class="accordion-content">
+            <p>Branded content designs for Instagram, Facebook, etc.<br><strong>R500 – R1,500</strong></p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">Email Newsletter Setup</button>
+          <div class="accordion-content">
+            <p>Template and automation setup via Mailchimp or similar.<br><strong>R800 – R2,000</strong></p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">SEO Optimisation</button>
+          <div class="accordion-content">
+            <p>Keyword strategy, image optimization, and performance tuning.<br><strong>R1,000 – R3,000</strong></p>
+          </div>
+        </div>
       </section>
+
 
       <section aria-labelledby="value-prop-title">
         <h2 id="value-prop-title">Why Choose Custom Code?</h2>
@@ -188,5 +217,26 @@
   <footer>
     &copy; 2025 Shakira Knight. All rights reserved.
   </footer>
+  <script>
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const content = header.nextElementSibling;
+      const isActive = header.classList.contains('active');
+
+      document.querySelectorAll('.accordion-header').forEach(h => h.classList.remove('active'));
+      document.querySelectorAll('.accordion-content').forEach(c => {
+        c.style.maxHeight = null;
+        c.style.paddingBottom = '0';
+      });
+
+      if (!isActive) {
+        header.classList.add('active');
+        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.paddingBottom = '1rem';
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
