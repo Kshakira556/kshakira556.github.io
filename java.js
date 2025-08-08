@@ -221,3 +221,29 @@ if (bookingForm) {
     });
   });
 }
+
+// Toggle visibility of "Other" text inputs on checkbox toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const otherServiceCheckbox = document.getElementById('other-service-checkbox');
+  const otherServiceText = document.getElementById('other-service-text');
+
+  const otherGoalsCheckbox = document.getElementById('other-goals-checkbox');
+  const otherGoalsText = document.getElementById('other-goals-text');
+
+  function toggleInput(checkbox, textInput) {
+    if (checkbox.checked) {
+      textInput.style.display = 'block';
+      textInput.focus();
+    } else {
+      textInput.style.display = 'none';
+      textInput.value = '';
+    }
+  }
+
+  otherServiceCheckbox.addEventListener('change', () => toggleInput(otherServiceCheckbox, otherServiceText));
+  otherGoalsCheckbox.addEventListener('change', () => toggleInput(otherGoalsCheckbox, otherGoalsText));
+
+  // Initialize hidden on load
+  toggleInput(otherServiceCheckbox, otherServiceText);
+  toggleInput(otherGoalsCheckbox, otherGoalsText);
+});
