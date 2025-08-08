@@ -166,3 +166,58 @@ mobileLinks.forEach(link => {
     mobileNav.classList.remove("show");
   });
 });
+
+// Consultation Booking Form
+const bookingForm = document.getElementById('bookingForm');
+const formMessage = document.getElementById('formMessage');
+const dateInput = document.getElementById('date');
+const timeInput = document.getElementById('time');
+
+if (dateInput && timeInput) {
+  // Block past dates
+  const today = new Date();
+  const yyyy = today.getFullYear();
+  const mm = String(today.getMonth() + 1).padStart(2, '0');
+  const dd = String(today.getDate()).padStart(2, '0');
+  dateInput.min = `${yyyy}-${mm}-${dd}`;
+
+  // Adjust available times based on the day
+  dateInput.addEventListener('change', function () {
+    const selectedDate = new Date(this.value);
+    const day = selectedDate.getDay(); // 0=Sun, 1=Mon, ... 6=Sat
+
+    let minTime, maxTime;
+
+    if (day === 0) { // Sunday
+      minTime = "09:00";
+      maxTime = "12:00";
+    } else if (day === 6) { // Saturday
+      minTime = "09:00";
+      maxTime = "14:00";
+    } else { // Weekdays
+      minTime = "08:00";
+      maxTime = "19:00";
+    }
+
+    timeInput.min = minTime;
+    timeInput.max = maxTime;
+    timeInput.value = ""; // Reset time selection
+  });
+}
+
+if (bookingForm) {
+  bookingForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    fetch(bookingForm.action, {
+      method: 'POST',
+      body: new FormData(bookingForm),
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        bookingForm.reset();
+        formMessage.style.display = 'block';
+        formMessage.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+}
