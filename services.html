@@ -206,6 +206,40 @@
         </div>
       </section>
 
+      <section id="consultation-booking" aria-labelledby="booking-title" class="booking-section">
+        <h2 id="booking-title">Book Your Free Consultation</h2>
+        <p>Let’s discuss your project goals and how I can help you succeed.</p>
+
+        <form id="bookingForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="booking-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" required>
+
+          <label for="service">Service Interested In</label>
+          <select id="service" name="service" required>
+            <option value="">-- Select a Service --</option>
+            <option value="custom-site">Custom Website</option>
+            <option value="branding">Branding</option>
+            <option value="seo">SEO Optimization</option>
+            <option value="consultation">Consultation Only</option>
+          </select>
+
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="preferred_date" required>
+
+          <label for="time">Preferred Time</label>
+          <input type="time" id="time" name="preferred_time" required>
+
+          <button type="submit">Book Now</button>
+        </form>
+
+        <p id="formMessage" class="success-message" style="display:none;">
+          ✅ Thank you! Your booking request has been sent.
+        </p>
+      </section>
+
       <section id="contact" aria-labelledby="contact-title">
         <h2 id="contact-title">Ready to Elevate Your Brand?</h2>
         <p>Contact me today for a free consultation and let’s build your unique online presence.</p>
