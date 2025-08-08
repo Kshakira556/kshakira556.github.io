@@ -821,3 +821,56 @@ table {
   }
 }
 
+.addons-accordion {
+  margin-top: 4rem;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #444;
+}
+
+.accordion-header {
+  background: none;
+  color: var(--text-light);
+  font-family: var(--body-font);
+  font-size: 1.1rem;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion-header::after {
+  content: '+';
+  position: absolute;
+  right: 1rem;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active::after {
+  content: '-';
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  color: var(--text-light);
+  padding: 0 1rem;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-content p {
+  margin: 1rem 0;
+}
+
+.accordion-header:hover,
+.accordion-header:focus {
+  background-color: #222;
+}
