@@ -989,7 +989,7 @@ table {
     margin-bottom: 1.5rem;
   }
 
-   .booking-form input[type="text"],
+  .booking-form input[type="text"],
   .booking-form input[type="email"],
   .booking-form input[type="date"],
   .booking-form input[type="time"],
@@ -1155,3 +1155,75 @@ table {
     padding: 1rem 1.25rem;
   }
 }
+
+@media (max-width: 520px) {
+  .booking-form label,
+  .lead-qualification-form label {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+  
+  .booking-form input[type="text"],
+  .booking-form input[type="email"],
+  .booking-form input[type="date"],
+  .booking-form input[type="time"],
+  .booking-form select,
+  .lead-qualification-form input[type="text"],
+  .lead-qualification-form textarea {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+  }
+  
+  .lead-qualification-form label {
+    margin-bottom: 1.2rem;
+  }
+}
+
+/* New code */
+.form-step {
+  display: none;
+}
+
+.form-step.active {
+  display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="url"] {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #00f5d4;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  background-color: #0d1117; /* dark background, adjust if needed */
+  color: #c9d1d9; /* light text */
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form input[type="url"]:focus {
+  outline: none;
+  border-color: #00f5d4;
+  box-shadow: 0 0 8px #00f5d4aa;
+}
+form textarea {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #00f5d4;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  resize: vertical;
+}
+
