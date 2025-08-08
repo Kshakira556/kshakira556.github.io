@@ -127,96 +127,165 @@
 
       <section id="lead-qualification" aria-labelledby="lead-qualification-title">
         <h2 id="lead-qualification-title">Lead Qualification Questionnaire</h2>
+        <form id="leadQualificationForm" class="lead-qualification-form" action="https://formspree.io/f/mldlovqn" method="POST">
+          <div class="form-step active">
+            <fieldset>
+              <legend>1. Which service package are you interested in? <small>(Select one or more)</small></legend>
+              <!-- Your existing labels here -->
+              <label><input type="checkbox" name="service_package" value="link-in-bio"> Link-in-bio Micro Site (R1,500 – R2,000)</label>
+              <label><input type="checkbox" name="service_package" value="starter-website"> Starter Website (R4,000 – R6,000)</label>
+              <label><input type="checkbox" name="service_package" value="growth-site"> Growth Site (R7,000 – R10,000)</label>
+              <label><input type="checkbox" name="service_package" value="full-personal-brand"> Full Personal Brand Site (R12,000 – R20,000+)</label>
+              <label><input type="checkbox" name="service_package" value="not-sure"> Not sure / Need help deciding</label>
+            </fieldset>
+            <button type="button" class="btn-next">Next</button>
+          </div>
 
-        <form id="leadQualificationForm" class="lead-qualification-form">
-          
-          <!-- 1. Service Package -->
-          <fieldset>
-            <legend>1. Which service package are you interested in? <small>(Select one or more)</small></legend>
-            <label><input type="checkbox" name="service_package" value="link-in-bio"> Link-in-bio Micro Site (R1,500 – R2,000)</label>
-            <label><input type="checkbox" name="service_package" value="starter-website"> Starter Website (R4,000 – R6,000)</label>
-            <label><input type="checkbox" name="service_package" value="growth-site"> Growth Site (R7,000 – R10,000)</label>
-            <label><input type="checkbox" name="service_package" value="full-personal-brand"> Full Personal Brand Site (R12,000 – R20,000+)</label>
-            <label><input type="checkbox" name="service_package" value="not-sure"> Not sure / Need help deciding</label>
-          </fieldset>
+          <!-- Step 2 -->
+          <div class="form-step">
+            <fieldset>
+              <legend>2. What additional services would you like to include? <small>(Select any)</small></legend>
+              <!-- your existing labels -->
+              <label><input type="checkbox" name="additional_services" value="branding"> Branding (logo, color palette)</label>
+              <label><input type="checkbox" name="additional_services" value="copywriting"> Copywriting (bios, website content)</label>
+              <label><input type="checkbox" name="additional_services" value="social-media-graphics"> Social Media Graphics</label>
+              <label><input type="checkbox" name="additional_services" value="email-newsletter"> Email Newsletter Setup</label>
+              <label><input type="checkbox" name="additional_services" value="seo-optimization"> SEO Optimization</label>
+              <label>
+                <input type="checkbox" id="other-service-checkbox" name="additional_services" value="other">
+                Other (please specify)
+              </label>
+              <input type="text" id="other-service-text" name="other_service_text" placeholder="Please specify">
+            </fieldset>
+            <button type="button" class="btn-prev">Previous</button>
+            <button type="button" class="btn-next">Next</button>
+          </div>
 
-          <!-- 2. Additional Services -->
-          <fieldset>
-            <legend>2. What additional services would you like to include? <small>(Select any)</small></legend>
-            <label><input type="checkbox" name="additional_services" value="branding"> Branding (logo, color palette)</label>
-            <label><input type="checkbox" name="additional_services" value="copywriting"> Copywriting (bios, website content)</label>
-            <label><input type="checkbox" name="additional_services" value="social-media-graphics"> Social Media Graphics</label>
-            <label><input type="checkbox" name="additional_services" value="email-newsletter"> Email Newsletter Setup</label>
-            <label><input type="checkbox" name="additional_services" value="seo-optimization"> SEO Optimization</label>
-            <label>
-              <input type="checkbox" id="other-service-checkbox" name="additional_services" value="other">
-              Other (please specify)
-            </label>
-            <input type="text" id="other-service-text" name="other_service_text" placeholder="Please specify">
-          </fieldset>
+          <!-- Step 3 -->
+          <div class="form-step">
+            <fieldset>
+              <legend>3. What is your approximate budget for this project?</legend>
+              <label><input type="radio" name="budget" value="under-3000" required> Under R3,000</label>
+              <label><input type="radio" name="budget" value="3000-7000"> R3,000 – R7,000</label>
+              <label><input type="radio" name="budget" value="7000-12000"> R7,000 – R12,000</label>
+              <label><input type="radio" name="budget" value="12000-plus"> R12,000+</label>
+            </fieldset>
+            <button type="button" class="btn-prev">Previous</button>
+            <button type="button" class="btn-next">Next</button>
+          </div>
 
-          <!-- 3. Budget -->
-          <fieldset>
-            <legend>3. What is your approximate budget for this project?</legend>
-            <label><input type="radio" name="budget" value="under-3000" required> Under R3,000</label>
-            <label><input type="radio" name="budget" value="3000-7000"> R3,000 – R7,000</label>
-            <label><input type="radio" name="budget" value="7000-12000"> R7,000 – R12,000</label>
-            <label><input type="radio" name="budget" value="12000-plus"> R12,000+</label>
-          </fieldset>
+          <!-- Step 4 -->
+          <div class="form-step">
+            <fieldset>
+              <legend>4. What is your ideal timeline for completing the project?</legend>
+              <label><input type="radio" name="timeline" value="immediate" required> Immediately / Within 2 weeks</label>
+              <label><input type="radio" name="timeline" value="1-month"> Within 1 month</label>
+              <label><input type="radio" name="timeline" value="2-3-months"> Within 2–3 months</label>
+              <label><input type="radio" name="timeline" value="3-months-plus"> 3 months or more / Flexible</label>
+            </fieldset>
+            <button type="button" class="btn-prev">Previous</button>
+            <button type="button" class="btn-next">Next</button>
+          </div>
 
-          <!-- 4. Timeline -->
-          <fieldset>
-            <legend>4. What is your ideal timeline for completing the project?</legend>
-            <label><input type="radio" name="timeline" value="immediate" required> Immediately / Within 2 weeks</label>
-            <label><input type="radio" name="timeline" value="1-month"> Within 1 month</label>
-            <label><input type="radio" name="timeline" value="2-3-months"> Within 2–3 months</label>
-            <label><input type="radio" name="timeline" value="3-months-plus"> 3 months or more / Flexible</label>
-          </fieldset>
+          <!-- Step 5 -->
+          <div class="form-step">
+            <fieldset>
+              <legend>5. What are your main goals for this website/project? <small>(Select up to 3)</small></legend>
+              <label><input type="checkbox" name="main_goals" value="increase-visibility"> Increase brand visibility</label>
+              <label><input type="checkbox" name="main_goals" value="generate-leads"> Generate leads / grow mailing list</label>
+              <label><input type="checkbox" name="main_goals" value="sell-online"> Sell products or services online</label>
+              <label><input type="checkbox" name="main_goals" value="professional-presence"> Build a professional online presence</label>
+              <label><input type="checkbox" name="main_goals" value="social-media-integration"> Integrate with social media and marketing tools</label>
+              <label>
+                <input type="checkbox" id="other-goals-checkbox" name="main_goals" value="other">
+                Other (please specify)
+              </label>
+              <input type="text" id="other-goals-text" name="other_goals_text" placeholder="Please specify">
+            </fieldset>
+            <button type="button" class="btn-prev">Previous</button>
+            <button type="button" class="btn-next">Next</button>
+          </div>
 
-          <!-- 5. Main Goals -->
-          <fieldset>
-            <legend>5. What are your main goals for this website/project? <small>(Select up to 3)</small></legend>
-            <label><input type="checkbox" name="main_goals" value="increase-visibility"> Increase brand visibility</label>
-            <label><input type="checkbox" name="main_goals" value="generate-leads"> Generate leads / grow mailing list</label>
-            <label><input type="checkbox" name="main_goals" value="sell-online"> Sell products or services online</label>
-            <label><input type="checkbox" name="main_goals" value="professional-presence"> Build a professional online presence</label>
-            <label><input type="checkbox" name="main_goals" value="social-media-integration"> Integrate with social media and marketing tools</label>
-            <label>
-              <input type="checkbox" id="other-goals-checkbox" name="main_goals" value="other">
-              Other (please specify)
-            </label>
-            <input type="text" id="other-goals-text" name="other_goals_text" placeholder="Please specify">
-          </fieldset>
+          <!-- Step 6 -->
+          <div class="form-step">
+            <fieldset>
+              <legend>6. Do you currently have:</legend>
+              <label>Existing website?</label>
+              <label><input type="radio" name="existing_website" value="yes" required> Yes</label>
+              <label><input type="radio" name="existing_website" value="no"> No</label>
 
-          <!-- 6. Existing Assets -->
-          <fieldset>
-            <legend>6. Do you currently have:</legend>
-            <label>Existing website?</label>
-            <label><input type="radio" name="existing_website" value="yes" required> Yes</label>
-            <label><input type="radio" name="existing_website" value="no"> No</label>
+              <label>Branding materials (logo, colors)?</label>
+              <label><input type="radio" name="branding_materials" value="yes" required> Yes</label>
+              <label><input type="radio" name="branding_materials" value="no"> No</label>
+              <label><input type="radio" name="branding_materials" value="need-help"> Need help</label>
 
-            <label>Branding materials (logo, colors)?</label>
-            <label><input type="radio" name="branding_materials" value="yes" required> Yes</label>
-            <label><input type="radio" name="branding_materials" value="no"> No</label>
-            <label><input type="radio" name="branding_materials" value="need-help"> Need help</label>
+              <label>Content ready (text, images)?</label>
+              <label><input type="radio" name="content_ready" value="yes" required> Yes</label>
+              <label><input type="radio" name="content_ready" value="no"> No</label>
+              <label><input type="radio" name="content_ready" value="need-help"> Need help</label>
+            </fieldset>
+            <button type="button" class="btn-prev">Previous</button>
+            <button type="button" class="btn-next">Next</button>
+          </div>
 
-            <label>Content ready (text, images)?</label>
-            <label><input type="radio" name="content_ready" value="yes" required> Yes</label>
-            <label><input type="radio" name="content_ready" value="no"> No</label>
-            <label><input type="radio" name="content_ready" value="need-help"> Need help</label>
-          </fieldset>
+          <!-- Step 7 -->
+          <div class="form-step">
+            <fieldset>
+              <legend>7. Please share any additional notes or special requests about your project:</legend>
+              <textarea name="additional_notes" rows="4" placeholder="Your message here..."></textarea>
+            </fieldset>
+            <button type="button" class="btn-prev">Previous</button>
+            <button type="button" class="btn-next">Next</button>
+          </div>
 
-          <!-- 7. Additional Notes -->
-          <fieldset>
-            <legend>7. Please share any additional notes or special requests about your project:</legend>
-            <textarea name="additional_notes" rows="4" placeholder="Your message here..."></textarea>
-          </fieldset>
+          <!-- Contact Info Step (Add as the last .form-step) -->
+          <div class="form-step">
+            <fieldset>
+              <legend>Contact Information <sup>*</sup></legend>
 
-          <button type="submit">Submit Questionnaire</button>
+              <label for="fullName">Full Name <sup>*</sup></label>
+              <input 
+                type="text" 
+                id="fullName" 
+                name="fullName" 
+                required 
+                placeholder="Your full name" 
+                autocomplete="name"
+              >
+
+              <label for="email">Email <sup>*</sup></label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required 
+                placeholder="you@example.com" 
+                autocomplete="email"
+              >
+
+              <label for="website">Website URL (optional)</label>
+              <input
+                type="url"
+                id="website"
+                name="website"
+                placeholder="https://example.com"
+                autocomplete="url"
+              >
+
+              <label for="phone">Phone Number (optional)</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                placeholder="+27 123 456 7890" 
+                autocomplete="tel"
+              >
+            </fieldset>
+            <button type="button" class="btn-prev">Previous</button>
+            <button type="submit">Submit Questionnaire</button>
+          </div>
         </form>
       </section>
-
-
 
       <section aria-labelledby="value-prop-title">
         <h2 id="value-prop-title">Why Choose Custom Code?</h2>
