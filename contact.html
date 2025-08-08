@@ -2,24 +2,37 @@
 <html lang="en">
   <head> 
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact Me | Shakira Knight</title>
-    <meta name="description" content="Contact Shakira Knight, Web & Mobile Developer" />
-
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shakira Knight | Web & Mobile Developer</title>
+    <meta name="description" content="Shakira Knight | Front-End Web & Mobile Developer Portfolio" />
+    <meta name="google-site-verification" content="SDFLQY5iGRmwfbCNkIszb2skkYNTR5uXWg2SxlkKhRY" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://kshakira556.github.io/contact.html" />
-    <meta property="og:title" content="Contact Me | Shakira Knight" />
-    <meta property="og:description" content="Contact Shakira Knight, Web & Mobile Developer" />
+    <meta property="og:url" content="https://kshakira556.github.io/" />
+    <meta property="og:title" content="Shakira Knight | Web & Mobile Developer" />
+    <meta property="og:description" content="Front-End Web & Mobile Developer crafting bold, modern digital experiences." />
+    <meta property="og:image" content="https://yourdomain.com/assets/pro-headshot.jpeg" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://kshakira556.github.io/contact.html" />
-    <meta name="twitter:title" content="Contact Me | Shakira Knight" />
-    <meta name="twitter:description" content="Contact Shakira Knight, Web & Mobile Developer" />
+    <meta name="twitter:url" content="https://kshakira556.github.io/" />
+    <meta name="twitter:title" content="Shakira Knight | Web & Mobile Developer" />
+    <meta name="twitter:description" content="Front-End Web & Mobile Developer crafting bold, modern digital experiences." />
+    <meta name="twitter:image" content="https://yourdomain.com/assets/pro-headshot.jpeg" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VS3YWVME0Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VS3YWVME0Y');
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- AOS Animate on Scroll CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script defer src="java.js"></script>
   </head>
   <body>
@@ -37,44 +50,151 @@
         <li><a href="contact.html" class="highlight">Get in Touch</a></li>
       </ul>
     </nav>
+
     <nav class="navbar">
       <h1 class="logo">Shakira Knight</h1>
       <ul class="nav-links">
-        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#hero">Home</a></li>
         <li><a href="index.html#skills">Skills</a></li>
         <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="services.html">Services</a></li>
       </ul>
     </nav>
 
-    <section id="contact" class="contact" style="padding: 6rem 2rem;">
-      <h2>Contact Me</h2>
-      <p>Let’s collaborate on your next project.</p>
-      <form action="https://formsubmit.co/d7a2821e72c564679c55c211d5d7da2f?next=https://kshakira556.github.io/thank-you.html" method="POST">
-        <input type="email" name="email" placeholder="Your email" required />
-        <textarea name="message" placeholder="Your message" rows="6" required></textarea>
-
-        <!-- Optional: redirect after submission -->
-        <input type="hidden" name="_next" value="https://kshakira556.github.io/thank-you.html" />
-
-        <!-- Optional: disable captcha -->
-        <input type="hidden" name="_captcha" value="false" />
-
-        <button type="submit">Send Message</button>
-      </form>
-
-      <div class="socials" style="margin-top: 2rem;">
-        <a href="tel:+27672042327">Call</a>
-        <a href="mailto:kshakira556@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Shakira,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20potential%20project%20opportunity.%20Please%20let%20me%20know%20when%20you’re%20available%20to%20chat.%0D%0A%0D%0AThanks,%0D%0A[Your%20Name]">Email</a>
-        <a href="https://api.whatsapp.com/send?phone=27672042327" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="https://linkedin.com/in/shakira-knight-638582209" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/kshakira556" target="_blank" rel="noopener">GitHub</a>
+    <section id="hero" class="hero">
+      <div class="hero-content" data-aos="fade-up">
+        <img src="assets/pro-headshot.jpeg" alt="Shakira Knight professional headshot" class="hero-img" />
+        <div>
+          <h1>Hey, I'm <span>Shakira Knight</span></h1>
+          <p class="tagline">Web & Mobile Developer crafting bold, modern digital experiences.</p>
+          <a href="#contact" class="btn-primary">Let's Build Together</a>
+        </div>
       </div>
     </section>
 
+    <section id="about" class="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>Hi, I’m <strong>Shakira Knight</strong>, a mobile and web developer with a passion for building technology that keeps people safe, connected, and empowered.</p>
+
+        <p>Before diving into tech, I spent years in business operations and enterprise sales, leading national teams, managing major accounts, and driving growth for brands like <strong>Vodacom, MTN, and iKhokha</strong>.</p>
+
+        <p>That experience taught me how to spot opportunities, communicate across silos, and solve problems that matter.</p>
+
+        <p>I’m proudly <strong>mixed race, queer, and neurodivergent</strong>. My lived experience shapes how I see the world and fuels my mission to build apps that protect people, support emotional wellness, and make the digital space safer for everyone.</p>
+
+        <p>Right now, I’m working on <strong>AURA</strong>, an AI-powered safety assistant that uses GPT-powered emotional analysis and real-time alerts to help people spot manipulation, scams, and other threats.</p>
+
+        <p>When I’m not coding, you’ll find me <strong>weightlifting, playing chess</strong>, or reading up on <em>psychology and human behavior</em>, blending tech, empathy, and security in every project I create.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills" data-aos="fade-up">
+      <h2>Skills</h2>
+      <p class="skills-intro">Tools and technologies I use to build modern, scalable digital experiences:</p>
+
+      <div class="skills-wrapper">
+
+        <div class="skills-category">
+          <h3>Front-End</h3>
+          <div class="icons">
+            <div class="icon-container">
+              <img src="assets/html5.png" alt="HTML5" />
+              <p>HTML5</p>
+            </div>
+            <div class="icon-container">
+              <img src="assets/css3.png" alt="CSS3" />
+              <p>CSS3</p>
+            </div>
+            <div class="icon-container">
+              <img src="assets/javascript.png" alt="JavaScript" />
+              <p>JavaScript</p>
+            </div>
+            <div class="icon-container">
+              <img src="assets/react.png" alt="React" />
+              <p>React</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3>Back-End</h3>
+          <div class="icons">
+            <div class="icon-container">
+              <img src="assets/nodejs.png" alt="Node.js" />
+              <p>Node.js</p>
+            </div>
+            <div class="icon-container">
+              <img src="assets/firebase.png" alt="Firebase" />
+              <p>Firebase</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3>Tools & Platforms</h3>
+          <div class="icons">
+            <div class="icon-container">
+              <img src="assets/github.png" alt="GitHub" />
+              <p>GitHub</p>
+            </div>
+            <div class="icon-container">
+              <img src="assets/vscode.png" alt="VS Code" />
+              <p>VS Code</p>
+            </div>
+            <div class="icon-container">
+              <img src="assets/androidstudio.png" alt="Android Studio" />
+              <p>Android Studio</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3>Soft Skills</h3>
+          <p class="soft-skills">Communication • Leadership • Problem Solving • Time Management • Client Collaboration</p>
+        </div>
+
+      </div>
+
+    <!-- ✅ Required only for JS compatibility -->
+    <div id="icons" data-show="true" style="display: none;"></div>
+  </section>
+
+    <section id="projects" class="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div id="projectImages" class="project-gallery"></div>
+      <p class="coming-soon">More projects coming soon!</p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials" data-aos="fade-up">
+      <h2>Testimonials</h2>
+      <div class="testimonials-wrapper">
+        <div class="testimonial-card">
+          <p>"Shakira’s professionalism and skillset transformed our project into a polished, user-friendly product."</p>
+          <h4>- Client Name</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"Her attention to detail and creative problem-solving made a huge difference in our success."</p>
+          <h4>- Client Name</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <p>Interested in working together? <a href="contact.html" class="btn-primary">Get in Touch</a></p>
+    </section>
+    
     <footer>
       <p>&copy; 2025 Shakira Knight. All rights reserved.</p>
     </footer>
+
+    <!-- AOS Animate on Scroll JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1200, once: true });
+    </script>
   </body>
 </html>
